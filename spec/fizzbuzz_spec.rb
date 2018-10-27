@@ -28,4 +28,9 @@ describe 'fizzbuzz' do
   it 'returns "fizz" when passed 20' do
     expect(fizzbuzz(20)).to eq 'buzz'
   end
+  it 'returns "1" when passed 1' do
+    numbers = [1, 2, 4, 7, 8, 11, 13, 14, 16, 17, 19]
+    number = numbers.sample
+    expect(fizzbuzz(number)).to eq number
+  end
 end
